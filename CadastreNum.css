@@ -1,0 +1,11 @@
+.cadastre-dialog .odd td
+{
+	background-color: #eaeaea;
+}
+.cadastre-dialog td
+{
+	padding: 1px 5px 2px 5px;
+	border: 1px solid #dedede;
+	font-size: 12px;
+	font-weight: normal;
+}
