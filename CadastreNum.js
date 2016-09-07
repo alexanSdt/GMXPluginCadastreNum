@@ -5,6 +5,7 @@
         pluginName: pluginName,
         afterViewer: function(params, map) {
 			var paramHook = function(layerName, id, parametres) {
+				if (!parametres.event) { return; }
 				var latlng = parametres.event.latlng,
 					layer = nsGmx.gmxMap.layersByID[layerName],
 					itemProps = layer.getItemProperties(layer._gmx.dataManager.getItem(id).properties),
